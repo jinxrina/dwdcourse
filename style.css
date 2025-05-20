@@ -1,0 +1,157 @@
+body {
+    font-family: 'Padauk', 'Myanmar Text', Arial, sans-serif; /* Added Padauk and Myanmar Text for Burmese script */
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+header {
+    background-color: #007bff; /* Changed header color */
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 25px;
+    border-radius: 10px 10px 0 0; /* Rounded top corners */
+}
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+header p {
+    margin: 5px 0 0;
+    font-size: 1.1em;
+}
+h2 {
+    color: #0056b3; /* Darker blue for H2 */
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 12px;
+    margin-top: 35px;
+    font-size: 1.8em;
+}
+h3 {
+    color: #0069d9; /* Slightly lighter blue for H3 */
+    margin-top: 25px;
+    font-size: 1.5em;
+}
+h4 {
+    color: #333;
+    font-size: 1.2em;
+    margin-top:20px;
+    margin-bottom:5px;
+}
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+ul li {
+    background-color: #f1f1f1;
+    margin-bottom: 12px;
+    padding: 15px;
+    border-radius: 6px;
+    border-left: 6px solid #007bff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+ul li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+ul li a {
+    text-decoration: none;
+    color: #0056b3; /* Link color */
+    font-weight: bold;
+    display: block; /* Make entire li clickable if desired, or just style link */
+}
+ul li a:hover {
+    text-decoration: underline;
+    color: #003875;
+}
+.guide-link, .action-button {
+    display: inline-block;
+    background-color: #28a745; /* Green for action buttons */
+    color: white !important; /* Important to override other link styles */
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+.guide-link:hover, .action-button:hover {
+    background-color: #218838; /* Darker green on hover */
+    text-decoration: none;
+}
+.assignment-instructions, .email-format {
+    background-color: #e6f7ff; /* Light blue background */
+    border: 1px solid #99d6ff; /* Blue border */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+.email-format pre {
+    background-color: #f8f9fa; /* Lighter background for pre */
+    padding: 15px;
+    border-radius: 6px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    border: 1px dashed #ccc; /* Dashed border for pre */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.95em;
+}
+.important-note {
+    color: #dc3545; /* Red for important notes */
+    font-weight: bold;
+}
+.welcome-message, .closing-message {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+.section-intro {
+    margin-bottom: 15px;
+    font-style: italic;
+}
+.emoji { /* Style for emojis if needed, though they usually render fine */
+    font-size: 1.2em;
+}
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    font-size: 0.95em;
+    color: #555;
+    border-top: 1px solid #eee;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+    header h1 {
+        font-size: 1.8em;
+    }
+    h2 {
+        font-size: 1.6em;
+    }
+    h3 {
+        font-size: 1.4em;
+    }
+    ul li {
+        padding: 12px;
+    }
+    .guide-link, .action-button {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+}
